@@ -37,20 +37,30 @@
                                     <constraint firstAttribute="height" constant="171" id="1lf-Fp-2fQ"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-yE-WmJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cg8-yE-WmJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4df-pr-KmF"/>
+                            <constraint firstItem="cg8-yE-WmJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HFX-ed-Z9O"/>
                             <constraint firstAttribute="trailing" secondItem="L3N-Cg-shD" secondAttribute="trailing" constant="9" id="ISg-dT-AJA"/>
                             <constraint firstAttribute="trailing" secondItem="MOV-rF-0iN" secondAttribute="trailing" id="OOy-E6-Bg0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MOV-rF-0iN" secondAttribute="bottom" id="SqQ-Q3-49U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cg8-yE-WmJ" secondAttribute="bottom" id="Sr5-VN-1HC"/>
                             <constraint firstItem="MOV-rF-0iN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ufo-q8-Iyw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IUd-sh-Pys" secondAttribute="bottom" id="ahN-Xo-KkF"/>
+                            <constraint firstAttribute="trailing" secondItem="cg8-yE-WmJ" secondAttribute="trailing" id="azf-2t-1pp"/>
                             <constraint firstItem="MOV-rF-0iN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gFe-mo-EmZ"/>
                             <constraint firstAttribute="trailing" secondItem="IUd-sh-Pys" secondAttribute="trailing" id="iWo-gT-Obf"/>
                             <constraint firstItem="L3N-Cg-shD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="14" id="iXh-Cj-CnO"/>
                             <constraint firstItem="IUd-sh-Pys" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v0f-Ue-Sql"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="cg8-yE-WmJ" id="kIm-5e-l7t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
